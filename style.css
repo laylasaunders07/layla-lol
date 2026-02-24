@@ -7,10 +7,10 @@
   --background: #F3CEFF;
   --text1: #000;
   --text2: #FFF;
-  --greenl: green;
-  --greend: green;
-  --redl: red;
-  --redd: red;
+  --greenl: rgb(0, 255, 0);
+  --greend: rgb(0, 255, 0);
+  --redl: rgb(255, 0, 0);
+  --redd: rgb(255, 0, 0);
 }
 
 /* main styles */
@@ -107,7 +107,7 @@ main {
 }
 
 @keyframes greenWaved {
-    0%, 60%, 100% { color: var(--text1); }
+    0%, 60%, 100% { color: var(--text2); }
     40% { color: var(--greend); }
 }
 
@@ -117,7 +117,7 @@ main {
 }
 
 @keyframes redWaved {
-    0%, 60%, 100% { color: var(--text1); }
+    0%, 60%, 100% { color: var(--text2); }
     40% { color: var(--redd); }
 }
 
