@@ -5,6 +5,12 @@
 
 :root {
   --background: #F3CEFF;
+  --text1: #000;
+  --text2: #FFF;
+  --greenl: green;
+  --greend: green;
+  --redl: red;
+  --redd: red;
 }
 
 /* main styles */
@@ -22,28 +28,145 @@ main {
 
 /* phone */
 
+.green {
+    color: var(--greend);
+}
+
+.red {
+    color: var(--redd);
+}
+
+.active {
+    color: var(--greend)
+}
+
+.inactive {
+    color: var(--redd);
+}
+
+.phone-container {
+  position: relative;
+  min-height: 650px;
+}
+
+.phone-container .phone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .phone {
     max-width: 300px;
 }
 
-/* buttons *
-
-.icon-row {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+.social-link {
+    width: 65px;
+    position: absolute;
 }
 
-.icon-row a {
-  flex: 0 0 auto;
-  padding-right: 10px;
+.social-text {
+    position: absolute;
+    font-size: 8px;
+    font-weight: 600;
+    margin-top: 62px;
+    text-align: center;
 }
 
-.icon-row img {
-  width: 80px;
-  height: 80px;
-  display: block;
+.social-text.active.l {
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    animation: greenWavel 3s infinite;
+}
+
+.social-text.active.d {
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    animation: greenWaved 3s infinite;
+}
+
+.social-text.inactive.l {
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    animation: redWavel 3s infinite;
+}
+
+.social-text.inactive.d {
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    animation: redWaved 3s infinite;
+}
+
+@keyframes greenWavel {
+    0%, 60%, 100% { color: var(--text2); }
+    40% { color: var(--greenl); }
+}
+
+@keyframes greenWaved {
+    0%, 60%, 100% { color: var(--text1); }
+    40% { color: var(--greend); }
+}
+
+@keyframes redWavel {
+    0%, 60%, 100% { color: var(--text2); }
+    40% { color: var(--redl); }
+}
+
+@keyframes redWaved {
+    0%, 60%, 100% { color: var(--text1); }
+    40% { color: var(--redd); }
+}
+
+.d {
+    color: var(--text1);
+}
+
+.l {
+    color: var(--text2);
+}
+
+.c1 {
+    left: 24px;
+}
+
+.c2 {
+    left: 86px;
+}
+
+.c3 {
+    left: 148px;
+}
+
+.c4 {
+    left: 210px;
+}
+
+.r1 {
+    top: 94px;
+}
+
+.r2 {
+    top: 166px;
+}
+
+.r3 {
+    top: 238px;
+}
+
+.r4 {
+    top: 310px;
+}
+
+.r5 {
+    top: 382px;
+}
+
+.r6 {
+    top: 462px;
 }
 
 /* horizontal scroll */
