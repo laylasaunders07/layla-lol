@@ -1,6 +1,16 @@
+/* Layla Saunders, 22/02/2026 */
+/* © wtfpl (www.wtfpl.net) */
+
+/* variables */
+
+:root {
+  --background: #F3CEFF;
+}
+
+/* main styles */
 body {
-    font-family: 'Helvetica', sans-serif;
-    background-color: #f3ceff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    background-color: var(--background);
 }
 
 main {
@@ -9,3 +19,60 @@ main {
     margin-right: auto;
     margin-top: 10%;
 }
+
+/* phone */
+
+.phone {
+    max-width: 300px;
+}
+
+/* buttons *
+
+.icon-row {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-row a {
+  flex: 0 0 auto;
+  padding-right: 10px;
+}
+
+.icon-row img {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+/* horizontal scroll */
+
+.icon-scroll {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.icon-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+.icon-track img {
+  display: block;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* end */
